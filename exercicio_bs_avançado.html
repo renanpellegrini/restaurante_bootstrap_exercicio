@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div id="carousel-restaurante" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="5000" class="carousel-item active">
+                    <img class="d-block w-100" src="./midias/interior.jpg"/>
+                    <div class="carousel-caption">
+                        <h2>Foto do interior do restaurante</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="5000" class="carousel-item">
+                    <img class="d-block w-100" src="./midias/bar.jpg"/>
+                    <div class="carousel-caption">
+                        <h2>Foto do bar</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="5000" class="carousel-item">
+                    <img class="d-block w-100" src="./midias/prato.jpg"/>
+                    <div class="carousel-caption">
+                        <h2>Foto de uma refeição</h2>
+                    </div>
+                </div>
+            </div>
+            <button data-bs-target="#carousel-restaurante" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-restaurante" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-restaurante" class = active data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-restaurante" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-restaurante" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+    </div>
+    <h1 class="container mt-4 mb-3">Cardápio</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-6 col-12">
+                <article class="card">
+                    <img src="./midias/feijoada.jpg">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Feijoada
+                        </h4>
+                        <p>Experimente uma de nossas especialidades!</p>
+                        <a href="#" class="btn btn-primary">Ver ingredientes</a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-4 col-sm-6 col-12">
+                <div class="card">
+                    <img src="./midias/macarrão.jpg">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Macarrão com linguiça de frango
+                        </h4>
+                        <p>Experimente uma de nossas especialidades!</p>
+                        <a href="#" class="btn btn-primary">Ver ingredientes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-12">
+                <article class="card">
+                    <img src="./midias/pizza.jpg">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Pizza
+                        </h4>
+                        <p>Experimente uma de nossas especialidades!</p>
+                        <a href="#" class="btn btn-primary">Ver ingredientes</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
